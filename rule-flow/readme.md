@@ -57,7 +57,7 @@ On executing this API with the aforementioned payload, you'll see that rules tha
 
 Also, note that I've added an agenda event listener to the same project - class `SampleAgendaEventListener`. Decision Manager emits all sorts of events: when facts are inserted into the engine, when rules are matched, when rules are fired, etc.  EventListeners can be used to log and debug rule execution by listening to these events and build required event logging output based on the event data. For example, in the SampleAgendaEventListener, the event listener logs which rules have got fired by implementing its afterMatchFired method. The event listener could be hooked onto to the project by mapping the listener in the project's kmodule.xml. 
 
-To do that from Decision Central, go to the project's `Settings` tab, choose `Kie bases` then select the `kiesession` and  specify the event listener like this.
+To do that from Decision Central, go to the project's `Settings` tab, choose `Kie bases` then select the `KIE sessions` and  specify the event listener like this for the chosen KIE session.
 
 ![Settings](https://github.com/bbalakriz/rule-flow__agend-agroup__event-listener/blob/master/images/1.png)
 
