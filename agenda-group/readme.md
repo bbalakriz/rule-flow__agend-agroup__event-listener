@@ -60,7 +60,8 @@ The API payload accepts one or more run-time commands to trigger the execution o
 
 On executing the REST API with the aforementioned payload, you'll see that rules that belong to agenda group AG1 will get executed first followed by the ones that belong to AG2. In the server console/log, you'll notice the following output
 
-```17:26:11,476 INFO  [stdout] (default task-36) Rule fired: Rule that belongs to Agend Group - AG1
+```
+17:26:11,476 INFO  [stdout] (default task-36) Rule fired: Rule that belongs to Agend Group - AG1
 17:26:11,476 INFO  [stdout] (default task-36) Rule fired: Rule that belongs to Agend Group - AG2
 ```
 
