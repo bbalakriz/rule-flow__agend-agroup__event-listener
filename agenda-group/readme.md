@@ -65,5 +65,5 @@ On executing the REST API with the aforementioned payload, you'll see that rules
 17:26:11,476 INFO  [stdout] (default task-36) Rule fired: Rule that belongs to Agend Group - AG2
 ```
 
- ***Note:*** Agenda groups work like a stack, so, look carefully at the set-focus ordering below.
+ ***Note:*** Agenda groups work like a stack, so, look carefully at the set-focus ordering in the payload above.
 
