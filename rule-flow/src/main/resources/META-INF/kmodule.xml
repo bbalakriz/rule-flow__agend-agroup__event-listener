@@ -1,0 +1,9 @@
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="rules" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="session" type="stateless" default="true" clockType="realtime">
+      <listeners>
+        <agendaEventListener type="com.myspace.ruleflow.SampleAgendaEventListener"/>
+      </listeners>
+    </ksession>
+  </kbase>
+</kmodule>

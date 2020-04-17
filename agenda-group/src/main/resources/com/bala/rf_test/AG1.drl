@@ -1,0 +1,12 @@
+package com.bala.rf_test;
+
+rule "Rule that belongs to Agend Group - AG1"
+no-loop true
+agenda-group "AG1"
+
+	when
+		$app : Applicant( age >= 18 , existingCustomer == true )
+	then
+		$app.setDemographicAssessment( "Suitable" );
+		System.out.println("Rule fired: " + drools.getRule().getName());
+end

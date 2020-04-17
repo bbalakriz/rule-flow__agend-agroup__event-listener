@@ -1,0 +1,12 @@
+package com.bala.rf_test;
+
+rule "Rule that belongs to Agend Group - AG2"
+no-loop true
+agenda-group "AG2"
+	when
+		$app : Applicant( numberOfDefaultPaymentsLast12Months >= 4 , bankruptcy == false )
+	then
+		$app.setCreditScore( 50 );
+		$app.setTotalCreditScore( $app.getTotalCreditScore() + $app.getCreditScore() );
+		System.out.println("Rule fired: " + drools.getRule().getName());
+end
