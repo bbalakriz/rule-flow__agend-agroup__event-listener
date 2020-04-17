@@ -59,6 +59,11 @@ Also, note that I've added an agenda event listener to the same project in the c
 
 To do that in Decision Central, go to the project's `Settings` tab, choose `Kie bases` then for the kiesession, specify the event listener like this.
 
+![Settings](https://github.com/bbalakriz/rule-flow__agend-agroup__event-listener/blob/master/images/1.png)
+
+![Settings](https://github.com/bbalakriz/rule-flow__agend-agroup__event-listener/blob/master/images/2.png)
+
+
 Alternatively, you can add the details to the kmodule.xml like this. 
 
 ```
